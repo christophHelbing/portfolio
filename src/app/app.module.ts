@@ -7,6 +7,9 @@ import {NavBarComponent} from "./components/nav-bar/nav-bar.component";
 import { HeaderComponent } from './components/header/header.component';
 import {NgxTypedJsModule} from "ngx-typed-js";
 import { AboutComponent } from './components/about/about.component';
+import { AppRoutingModule } from './app-routing.module';
+import {FaIconLibrary, FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import {fas} from "@fortawesome/free-solid-svg-icons";
 
 @NgModule({
   declarations: [
@@ -19,8 +22,14 @@ import { AboutComponent } from './components/about/about.component';
     BrowserModule,
     NgbModule,
     NgxTypedJsModule,
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIconPacks(fas);
+  }
+}
