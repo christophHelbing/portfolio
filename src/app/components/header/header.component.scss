@@ -1,0 +1,18 @@
+.background {
+  width: 100%;
+  min-height: 500px;
+  background: url('/assets/img/header-bg.jpg') no-repeat bottom center;
+  background-size: cover;
+  color: white;
+}
+
+#home p {
+  font-size: 26px;
+}
+
+#home p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
