@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "variables";
 
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
 /* Importing Bootstrap Icons. */
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -16,5 +17,5 @@ body {
 
 .section-headline {
   font-size: 2.5rem;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid $primary;
 }

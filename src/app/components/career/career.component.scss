@@ -1,3 +1,5 @@
+@import "variables";
+
 .timeline {
   list-style-type: none;
   margin: 0;
@@ -11,12 +13,12 @@
   top: 5px;
   bottom: 5px;
   width: 5px;
-  background: #149ddd;
+  background: $primary;
   left: 26%;
   margin-left: -2.5px
 }
 
-.timeline>li {
+.timeline > li {
   position: relative;
   min-height: 50px;
   padding: 20px 0
@@ -59,17 +61,18 @@
   height: 20px;
   display: inline-block;
   border-radius: 20px;
-  background: #d9e0e7;
+  background: $primary-accent;
   line-height: 10px;
   color: #fff;
   font-size: 14px;
-  border: 5px solid #149ddd;
+  border: 5px solid $primary;
   transition: border-color .2s linear
 }
+
 .timeline .timeline-body {
   margin-left: 32%;
   margin-right: 11%;
-  background: #dff3fc;
+  background: $primary-accent;
   position: relative;
   padding: 20px 25px;
   border-radius: 6px
@@ -80,23 +83,23 @@
   display: block;
   position: absolute;
   border: 10px solid transparent;
-  border-right-color: #dff3fc;
+  border-right-color: $primary-accent;
   left: -20px;
   top: 20px
 }
 
-.timeline .timeline-body>div+div {
+.timeline .timeline-body > div + div {
   margin-top: 15px
 }
 
-.timeline .timeline-body>div+div:last-child {
+.timeline .timeline-body > div + div:last-child {
   margin-bottom: -20px;
   border-radius: 0 0 6px 6px
 }
 
 .timeline-header {
   padding-bottom: 10px;
-  border-bottom: 1px solid #dff3fc;
+  border-bottom: 1px solid $primary-accent;
 }
 
 .timeline-header .desc {
