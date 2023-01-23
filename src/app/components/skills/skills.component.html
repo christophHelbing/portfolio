@@ -2,6 +2,57 @@
   <div class="container">
     <span class="section-headline">Skills</span>
 
+    <h4 class="mt-3">Technische Skills</h4>
+    <div class="row">
+      <div class="col-sm-6 col-lg-3" *ngFor="let skill of skill.technicalSkills">
+
+        <div class="row">
+          <div class="col-3">
+            <i class="{{skill.icon}}"></i>
+          </div>
+          <div class="col-8 align-self-center px-0">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                    [style.width]="skill.percentage+'%'">
+                {{skill.percentage+'%'}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="mt-5">Softskills</h4>
+    <div class="row">
+      <div class="col-sm-12 col-lg-12" *ngFor="let skill of skill.softskills">
+
+        <div class="row">
+          <div class="col-sm-12 col-lg-3">
+            <span>{{skill.name}}</span>
+          </div>
+          <div class="col-sm-12 col-lg-8 align-self-center">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   [style.width]="skill.percentage+'%'">
+                {{skill.percentage+'%'}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="mt-5">Zertifikate</h4>
+    <div class="col-sm-12 col-lg-6">
+      <ul>
+        <li *ngFor="let cert of skill.certs">
+          <fa-icon icon="certificate"></fa-icon>
+          <strong>{{cert.name}} ({{cert.year}})</strong>
+        </li>
+      </ul>
+    </div>
 
   </div>
 </section>
