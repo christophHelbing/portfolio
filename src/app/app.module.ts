@@ -10,6 +10,8 @@ import { AboutComponent } from './components/about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import {FaIconLibrary, FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {fas} from "@fortawesome/free-solid-svg-icons";
+import { CareerComponent } from './components/career/career.component';
+import {DatePipe} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import {fas} from "@fortawesome/free-solid-svg-icons";
     NavBarComponent,
     HeaderComponent,
     AboutComponent,
+    CareerComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,7 @@ import {fas} from "@fortawesome/free-solid-svg-icons";
     AppRoutingModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -1,0 +1,39 @@
+<section id="career">
+  <div class="container">
+    <span class="section-headline">Beruflicher Werdegang</span>
+
+      <ul class="timeline">
+        <li *ngFor="let step of career.carrerSteps">
+          <div class="timeline-time">
+            <div class="time-body">
+              <span class="time">{{step.durationFrom | date: "MM/yyyy"}}</span>
+              <span class="time"> - </span>
+              <span class="time">{{getPresentDateString(step.durationTo)}}</span>
+            </div>
+            <div>
+              <span class="sub-time"><small>{{getDateDiffInYears(step.durationFrom, step.durationTo)}} Jahre</small></span>
+            </div>
+          </div>
+          <div class="timeline-icon">
+            <span></span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-header">
+              <div>
+                <span><strong>{{step.companyName}}</strong></span>
+              </div>
+              <div class="desc">
+                <span>{{step.jobTitle}}</span>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <p>
+                {{step.jobDesciption}}
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+</section>
+
