@@ -8,7 +8,7 @@ import {SKILLS} from "../../data/skills";
 })
 export class SkillsComponent implements OnInit {
 
-  skill = SKILLS
+  skills = SKILLS
 
   constructor() { }
 
