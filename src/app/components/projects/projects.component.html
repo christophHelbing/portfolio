@@ -2,8 +2,35 @@
   <div class="container">
     <span class="section-headline">Projekthistorie</span>
 
-    <div class="col-12">
+    <div class="mt-5">
+      <div class="custom-container" #container>
+        <a class="left"
+           *ngIf="totalPages > 1"
+           (click)="currentPage != 1 && changePage(-1)"
+           [ngClass]="{'disabled':currentPage === 1}"
+        >
+          <i class="bi bi-arrow-left-circle"></i>
+        </a>
 
+
+
+        <div class="cards" [ngClass]="{'w-100': totalPages === 1}">
+          <div class="overflow" [ngStyle]="{'width': overflowWidth, 'left': pagePosition}">
+            <div class="card" *ngFor="let project of projects" [ngStyle]="{'width': cardWidth}">
+
+            </div>
+          </div>
+        </div>
+
+        <a class="right"
+           *ngIf="totalPages > 1"
+           (click)="currentPage != totalPages && changePage(+1)"
+           [ngClass]="{'disabled':currentPage === totalPages}"
+        >
+          <i class="bi bi-arrow-right-circle"></i>
+        </a>
+      </div>
     </div>
+
   </div>
 </section>
