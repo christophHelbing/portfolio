@@ -19,7 +19,7 @@
 }
 
 .card {
-  height: 400px;
+  height: 430px;
   border-radius: 5px;
   display: inline-block;
   margin-right: 10px;
@@ -31,7 +31,11 @@
 }
 
 .card-content {
-  height: 320px;
+  display: inline-grid;
+}
+
+.project-text {
+  height: 150px;
 }
 
 .left,
@@ -54,3 +58,6 @@
   right: 0;
 }
 
+.bottom {
+  padding-bottom: 2rem;
+}

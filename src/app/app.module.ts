@@ -14,7 +14,6 @@ import { CareerComponent } from './components/career/career.component';
 import {DatePipe} from "@angular/common";
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,6 @@ import { ContactComponent } from './components/contact/contact.component';
     CareerComponent,
     SkillsComponent,
     ProjectsComponent,
-    ContactComponent,
   ],
   imports: [
     BrowserModule,

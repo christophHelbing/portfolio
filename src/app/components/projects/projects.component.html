@@ -1,4 +1,4 @@
-<section id="projects" class="mt-5">
+<section id="projects" class="mt-5 bottom">
   <div class="container">
     <span class="section-headline">Projekthistorie</span>
 
@@ -13,11 +13,20 @@
         </a>
 
 
-
         <div class="cards" [ngClass]="{'w-100': totalPages === 1}">
           <div class="overflow" [ngStyle]="{'width': overflowWidth, 'left': pagePosition}">
             <div class="card" *ngFor="let project of projects" [ngStyle]="{'width': cardWidth}">
-
+              <div class="card-body">
+                <h5 class="card-title">{{project.name}}</h5>
+                <div class="card-content">
+                  <p class="my-0"><b>Beschreibung:</b></p>
+                  <p class="project-text">{{project.description}}</p>
+                  <p class="my-0"><b>Technologien:</b></p>
+                  <ul>
+                    <li *ngFor="let tech of project.technologies">{{tech}}</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
