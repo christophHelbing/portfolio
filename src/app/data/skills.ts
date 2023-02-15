@@ -25,17 +25,7 @@ export const SKILLS: Skills = {
     {
       name: "Kotlin",
       icon: "devicon-kotlin-plain-wordmark",
-      percentage: 70
-    },
-    {
-      name: "Spring",
-      icon: "devicon-spring-plain",
-      percentage: 40
-    },
-    {
-      name: "Selenium",
-      icon: "devicon-selenium-original",
-      percentage: 40
+      percentage: 75
     },
     {
       name: "JavaScript",
@@ -53,14 +43,23 @@ export const SKILLS: Skills = {
       percentage: 90
     },
     {
+      name: "Spring",
+      icon: "devicon-spring-plain",
+      percentage: 60
+    },
+    {
       name: "Bootstrap",
       icon: "devicon-bootstrap-plain",
       percentage: 75
-    }
-    ,
+    },
     {
       name: "Python",
       icon: "devicon-python-plain",
+      percentage: 40
+    },
+    {
+      name: "Selenium",
+      icon: "devicon-selenium-original",
       percentage: 40
     },
     {
@@ -126,12 +125,12 @@ export const SKILLS: Skills = {
 
   certs: [
     {
-      name: "AZ-900 Azure Fundamentals",
-      year: "2021"
-    },
-    {
       name: "iSAQB Certified Professional for Software Architecture",
       year: "2022"
+    },
+    {
+      name: "AZ-900 Azure Fundamentals",
+      year: "2021"
     }
   ]
 }

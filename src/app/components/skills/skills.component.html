@@ -13,7 +13,7 @@
           <div class="col-8 align-self-center px-0">
             <div class="progress">
               <div class="progress-bar progress-bar-striped progress-bar-animated"
-                   role="progressbar"
+                   role="progressbar" aria-label="skill knowledge in percentage"
                     [style.width]="skill.percentage+'%'">
                 {{skill.percentage+'%'}}
               </div>
@@ -34,7 +34,7 @@
           <div class="col-sm-12 col-lg-8 align-self-center">
             <div class="progress">
               <div class="progress-bar progress-bar-striped progress-bar-animated"
-                   role="progressbar"
+                   role="progressbar" aria-valuemin="0" aria-valuemax="100"
                    [style.width]="skill.percentage+'%'">
                 {{skill.percentage+'%'}}
               </div>
