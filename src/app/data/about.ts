@@ -13,6 +13,6 @@ export const ABOUT: About = {
   graduate: "Dipl. Ing. Informationstechnik (BA)",
   city: "Dresden, Sachsen",
   birthday: new Date(1988, 6, 4),
-  mail: "manig.christoph@googlemail.com",
+  mail: "kontakt@christoph-helbing.de",
   motivationText: ""
 }
