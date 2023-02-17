@@ -33,9 +33,11 @@
             </div>
           </div>
           <div class="timeline-content">
-            <p>
-              {{step.jobDesciption}}
-            </p>
+            <ul>
+              <li *ngFor="let desc of step.jobDesciption">
+                {{desc}}
+              </li>
+            </ul>
           </div>
         </div>
       </li>

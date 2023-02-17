@@ -7,7 +7,7 @@ interface CareerStep {
   durationFrom: Date
   durationTo: Date
   jobTitle: string
-  jobDesciption: string
+  jobDesciption: string[]
 }
 
 export const CAREER: Career = {
@@ -17,21 +17,38 @@ export const CAREER: Career = {
       durationFrom: new Date(2021, 9, 1),
       durationTo: new Date(),
       jobTitle: "Fullstack-Software-Entwickler",
-      jobDesciption: "Software-Entwicklung im Bereich E-Government."
+      jobDesciption:[
+        "Software-Entwicklung im Bereich E-Government",
+        "Betreuung und Weiterentwicklung bestehender Verwaltungssoftware",
+        "Konzeptionierung und Entwicklung von Software basierend auf Java/Kotlin im Backend und Angular/Typescript im Frontend",
+        "Mitentwicklung der Erstellung verschiedener Software-Architekturen",
+        "Entwurf und Mitentwicklung eventbasierter Software-Architektur",
+        "Unterstützung in Angebotsprozessen"
+      ]
     },
     {
       companyName: "T-Systems International GmbH",
       durationFrom: new Date(2011, 9, 1),
       durationTo: new Date(2021, 9, 1),
       jobTitle: "Systems Engineer",
-      jobDesciption: "Software-Entwicklung in verschiedenen Projekten im Logistikbereich."
+      jobDesciption: [
+        "Entwicklung verschiedener Software-Komponenten und Schnittstellen für große Kunden im Logistik-und Transportsektor",
+        "Design und Konzeptionierung der Architektur verschiedener Webanwendungen mit Angular und Apache Wicket",
+        "Planung, Schätzung und Koordinierung von Arbeitspaketen",
+        "Unterstützung von Angebotsprozessen",
+        "Übernahme der Entwicklungsleitung eines Frontend-Entwicklungsteams"
+        ]
     },
     {
       companyName: "T-Systems Multimedia Solutions GmbH",
       durationFrom: new Date(2008, 9, 1),
       durationTo: new Date(2011, 9, 1),
       jobTitle: "BA-Student",
-      jobDesciption: "Duales Studium für Informationstechnik an der Berufsakademie in Sachsen."
+      jobDesciption: [
+        "Duales Studium für Informationstechnik an der Berufsakademie in Sachsen",
+        "Produktive Projektarbeit als Junior Software Developer",
+        "Webentwicklung mit Struts und Backend-Entwicklung mit Java"
+        ]
     }
   ]
 }
