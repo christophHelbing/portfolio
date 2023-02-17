@@ -4,6 +4,8 @@ interface About {
   city: string
   birthday: Date
   mail: string
+  xingLink: string
+  githubLink: string
   motivationText: string
 }
 
@@ -14,5 +16,7 @@ export const ABOUT: About = {
   city: "Dresden, Sachsen",
   birthday: new Date(1988, 6, 4),
   mail: "kontakt@christoph-helbing.de",
+  xingLink: "https://www.xing.com/profile/Christoph_Helbing5",
+  githubLink: "https://github.com/christophHelbing",
   motivationText: ""
 }
