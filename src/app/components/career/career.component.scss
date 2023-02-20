@@ -120,9 +120,11 @@
 
 .download-link {
   text-decoration: none;
-  color: grey;
-  font-size: 12px;
-  margin-left: 15px;
-  position: absolute;
-  margin-top: 40px;
+  font-size: 14px;
+  margin-left: 6%;
+  color: black;
+
+  &:hover {
+    color: grey;
+  }
 }

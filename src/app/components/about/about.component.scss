@@ -26,6 +26,15 @@ a {
   text-decoration: none;
 }
 
+.link-image:hover {
+  opacity: 0.2;
+}
+
 .devicon-github-original-wordmark {
   font-size: 30px;
+}
+
+.profile-image {
+  border: solid 1px grey;
+  padding: 5px;
 }
