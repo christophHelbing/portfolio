@@ -10,9 +10,9 @@ interface About {
 }
 
 export const ABOUT: About = {
-  introduction: "Seit 2011 bin ich als Software-Entwickler tätig. Anfangs mit dem Schwerpunkt als Frontend-Entwickler, " +
-    "konnte ich in den vergangenen Jahren umfangreiche Kenntnisse in der Tätigkeit als Fullstack-Entwickler sammeln." +
-    " Technologisch liegt mein Schwerpunkt auf JVM-basierten Systemen im Backend und Angular/Typescript im Frontend.",
+  introduction: "Seit 2011 bin ich als Software-Entwickler tätig. Anfangs mit dem Schwerpunkt der Frontend-Entwicklung, " +
+    "konnte ich in den vergangenen Jahren umfangreiche Kenntnisse als Fullstack-Entwickler sammeln. " +
+    "Technologisch liegt mein Schwerpunkt auf JVM-basierten Systemen im Backend und Angular/Typescript im Frontend.",
   graduate: "Dipl. Ing. Informationstechnik (BA)",
   city: "Dresden, Sachsen",
   birthday: new Date(1988, 6, 4),
