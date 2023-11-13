@@ -13,11 +13,23 @@ interface CareerStep {
 export const CAREER: Career = {
   carrerSteps: [
     {
+      companyName: "sevDesk GmbH",
+      durationFrom: new Date(2023, 4, 1),
+      durationTo: new Date(),
+      jobTitle: "Senior Software-Entwickler",
+      jobDesciption: [
+        "Software-Entwicklung im Bereich Buchhaltung",
+        "Weiterentwicklung Buchhaltungsservice vorwiegend im Backend auf Basis von Kotlin",
+        "Verbesserung bestehender Softwareentwicklungsprozesse",
+        "Unterstützung in der Erstellung fachlicher und technischer Arbeitspakete"
+      ]
+    },
+    {
       companyName: "CONET ISB GmbH",
       durationFrom: new Date(2021, 9, 1),
-      durationTo: new Date(),
+      durationTo: new Date(2023,4,1),
       jobTitle: "Fullstack-Software-Entwickler",
-      jobDesciption:[
+      jobDesciption: [
         "Software-Entwicklung im Bereich E-Government",
         "Betreuung und Weiterentwicklung bestehender Verwaltungssoftware",
         "Konzeptionierung und Entwicklung von Software basierend auf Java/Kotlin im Backend und Angular/Typescript im Frontend",
@@ -37,7 +49,7 @@ export const CAREER: Career = {
         "Planung, Schätzung und Koordinierung von Arbeitspaketen",
         "Unterstützung von Angebotsprozessen",
         "Übernahme der Entwicklungsleitung eines Frontend-Entwicklungsteams"
-        ]
+      ]
     },
     {
       companyName: "T-Systems Multimedia Solutions GmbH",
@@ -48,7 +60,7 @@ export const CAREER: Career = {
         "Duales Studium für Informationstechnik an der Berufsakademie in Sachsen",
         "Produktive Projektarbeit als Junior Software Developer",
         "Webentwicklung mit Struts und Backend-Entwicklung mit Java"
-        ]
+      ]
     }
   ]
 }

@@ -17,8 +17,22 @@ export class CareerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public getDateDiffInYears(from: Date, to: Date): number {
-    return to.getFullYear() - from.getFullYear()
+  public getDateDiffString(from: Date, to: Date): string {
+    let monthDiff = this.getDateDiffInMonth(from, to)
+
+    let years = (BigInt(monthDiff) / 12n)
+    let months = monthDiff % 12
+
+    let yearString = years == 1n ? " Jahr" : " Jahre"
+    let monthString = months == 1 ? " Monat" : " Monate"
+
+    if(years == 0n) {
+      return months + monthString
+    } else if( months == 0) {
+      return years + yearString
+    } else {
+      return years + yearString + " " + months + monthString
+    }
   }
 
   public getPresentDateString(to: Date): string | null {
@@ -27,5 +41,9 @@ export class CareerComponent implements OnInit {
       return "Heute"
     }
     return this.datePipe.transform(to, "MM/yyyy")
+  }
+
+  private getDateDiffInMonth(from: Date, to: Date): number {
+    return to.getMonth() - from.getMonth() + (12 * (to.getFullYear() - from.getFullYear()))
   }
 }
