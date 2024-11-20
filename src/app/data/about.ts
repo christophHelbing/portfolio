@@ -15,7 +15,7 @@ export const ABOUT: About = {
     "konnte ich in den vergangenen Jahren umfangreiche Kenntnisse als Fullstack-Entwickler sammeln. " +
     "Technologisch liegt mein Schwerpunkt auf JVM-basierten Systemen im Backend und Angular/Typescript im Frontend.",
   graduate: "Dipl. Ing. Informationstechnik (BA)",
-  city: "Bad Düben, Sachsen",
+  city: "Dresden, Sachsen",
   birthday: new Date(1988, 6, 4),
   mail: "kontakt@christoph-helbing.de",
   xingLink: "https://www.xing.com/profile/Christoph_Helbing5",
