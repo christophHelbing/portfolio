@@ -7,6 +7,7 @@ interface About {
   xingLink: string
   githubLink: string
   linkedInLink: string
+  freelancerMapLink: string
   motivationText: string
 }
 
@@ -21,6 +22,7 @@ export const ABOUT: About = {
   xingLink: "https://www.xing.com/profile/Christoph_Helbing5",
   githubLink: "https://github.com/christophHelbing",
   linkedInLink: "https://www.linkedin.com/in/christoph-helbing/",
+  freelancerMapLink: "https://www.freelancermap.de/profil/christoph-helbing",
   motivationText: "Als flexibler und wissbegieriger Mensch bin ich stets daran interessiert, meine Kenntnisse und mein Wissensspektrum" +
     " zu erweitern. Daher stehe ich neuen Technologien offen gegenüber. Mit viel Freude und Engagement widme ich mich " +
     "den Problemlösungen neuer komplexer Aufgabenstellungen, um so mein technologisches und fachliches Wissen stetig zu erweitern."

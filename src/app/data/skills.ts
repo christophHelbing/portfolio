@@ -25,7 +25,7 @@ export const SKILLS: Skills = {
     {
       name: "Kotlin",
       icon: "devicon-kotlin-plain-wordmark",
-      percentage: 75
+      percentage: 90
     },
     {
       name: "JavaScript",
@@ -43,9 +43,14 @@ export const SKILLS: Skills = {
       percentage: 90
     },
     {
+      name: "React",
+      icon: "devicon-react-original-wordmark",
+      percentage: 75
+    },
+    {
       name: "Spring",
       icon: "devicon-spring-plain",
-      percentage: 60
+      percentage: 70
     },
     {
       name: "Bootstrap",
@@ -65,27 +70,27 @@ export const SKILLS: Skills = {
     {
       name: "Gradle",
       icon: "devicon-gradle-plain",
-      percentage: 50
+      percentage: 65
     },
     {
       name: "Docker",
       icon: "devicon-docker-plain-wordmark",
-      percentage: 50
+      percentage: 70
     },
     {
       name: "Git",
       icon: "devicon-git-plain",
-      percentage: 75
+      percentage: 85
     },
     {
       name: "IntelliJ",
       icon: "devicon-intellij-plain",
-      percentage: 85
+      percentage: 90
     },
     {
       name: "Postgres",
       icon: "devicon-postgresql-plain",
-      percentage: 65
+      percentage: 70
     },
     {
       name: "Oracle",
